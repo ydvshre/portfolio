@@ -1,0 +1,313 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Inter', sans-serif;
+}
+
+body{
+background:#0b0f19;
+color:white;
+line-height:1.6;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+/* NAVBAR */
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:#0b0f19;
+padding:20px 10%;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+opacity:0.8;
+}
+
+nav a:hover{
+opacity:1;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 10%;
+}
+
+.hero-left{
+max-width:500px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero span{
+color:#4cc9f0;
+}
+
+.hero h2{
+margin-top:10px;
+opacity:0.8;
+}
+
+.hero p{
+margin-top:15px;
+}
+
+.hero img{
+width:280px;
+border-radius:20px;
+}
+
+/* BUTTONS */
+
+.btn{
+display:inline-block;
+background:#4cc9f0;
+padding:10px 25px;
+margin-top:20px;
+border-radius:30px;
+text-decoration:none;
+color:black;
+}
+
+.btn-outline{
+border:1px solid #4cc9f0;
+padding:10px 25px;
+border-radius:30px;
+margin-left:10px;
+color:white;
+text-decoration:none;
+}
+
+/* SECTION */
+
+.section{
+
+padding:120px 10%;
+text-align:center;
+position:relative;
+
+}
+
+.section::after{
+
+content:"";
+position:absolute;
+bottom:0;
+left:50%;
+width:200px;
+height:1px;
+
+background:linear-gradient(90deg,transparent,#4cc9f0,transparent);
+
+transform:translateX(-50%);
+
+}
+
+.about-text{
+max-width:700px;
+margin:auto;
+margin-top:20px;
+opacity:0.8;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.skill-card{
+background:#111827;
+padding:30px;
+width:250px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.skill-card h3{
+margin-bottom:10px;
+color:#4cc9f0;
+}
+
+/* PROJECT */
+
+.projects{
+display:flex;
+justify-content:center;
+margin-top:40px;
+}
+
+.project-card{
+
+background:#111827;
+padding:30px;
+border-radius:14px;
+width:350px;
+
+transition:all 0.4s ease;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 25px 45px rgba(0,0,0,0.5);
+
+}
+
+.project-card a{
+color:#4cc9f0;
+text-decoration:none;
+}
+
+/* TECH STACK */
+
+.tech-icons{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.tech-icons img{
+width:60px;
+transition:0.3s;
+}
+
+.tech-icons img:hover{
+transform:scale(1.2);
+}
+
+/* EDUCATION */
+
+.education-card{
+background:#111827;
+padding:25px;
+margin:20px auto;
+width:300px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ACHIEVEMENTS */
+
+.achievement-list{
+max-width:600px;
+margin:30px auto;
+text-align:left;
+}
+
+.achievement-list li{
+margin:12px 0;
+}
+
+/* CTA */
+
+.cta p{
+max-width:700px;
+margin:15px auto 25px auto;
+opacity:0.8;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+html{
+scroll-behavior:smooth;
+}
+.background-animation{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+
+background:
+radial-gradient(circle at 20% 20%, rgba(76,201,240,0.15), transparent 40%),
+radial-gradient(circle at 80% 30%, rgba(0,255,170,0.12), transparent 40%),
+radial-gradient(circle at 40% 80%, rgba(120,100,255,0.12), transparent 40%);
+
+animation: moveBackground 12s infinite alternate ease-in-out;
+}
+
+@keyframes moveBackground{
+0%{transform:translate(0,0);}
+100%{transform:translate(-60px,-60px);}
+}
+.glass-card{
+
+background:rgba(255,255,255,0.03);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+
+padding:40px;
+border-radius:18px;
+
+transition:all 0.4s ease;
+
+}
+
+.glass-card:hover{
+
+transform:translateY(-6px);
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+
+}
+.reveal{
+
+opacity:0;
+transform:translateY(80px);
+transition:all 0.8s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
