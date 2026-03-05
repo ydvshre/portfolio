@@ -310,4 +310,55 @@ transition:all 0.8s ease;
 opacity:1;
 transform:translateY(0);
 
+
+}
+.github-chart{
+width:100%;
+max-width:900px;
+margin-top:20px;
+border-radius:10px;
+}
+.project-image{
+
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+
+}
+@media (max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+gap:40px;
+height:auto;
+padding-top:120px;
+}
+
+.hero img{
+width:200px;
+}
+
+nav ul{
+display:none;
+}
+
+.skills{
+flex-direction:column;
+align-items:center;
+}
+
+.projects{
+flex-direction:column;
+align-items:center;
+}
+
+.skill-card,
+.project-card{
+width:90%;
+}
+
+.hero-tagline{
+opacity:0.7;
+margin-top:10px;
 }
